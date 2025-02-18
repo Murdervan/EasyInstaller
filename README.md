@@ -1,5 +1,5 @@
 # EazyInstaller
-EasyInstaller is a simple CMD script that allows you to easily download and install popular Windows applications with a few keystrokes. It provides a menu-driven interface where you can select multiple apps to download at once
+EasyInstaller is a simple CMD script that allows you to easily download and install mannuel popular Windows applications with a few keystrokes. It provides a menu-driven interface where you can select multiple apps to download at once
 Features
 
 Download and install popular browsers, gaming clients, media players, security tools, and utilities.
@@ -67,12 +67,6 @@ RAMMap
 Discord
 
 Notes
-
-Proton apps cannot be downloaded directly; the script provides links to their official websites.
-
-Some installers may require manual confirmation after download.
-
-License
 
 This project is open-source and free to use. Contributions are welcome!
 
