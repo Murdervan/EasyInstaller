@@ -1,5 +1,7 @@
 # EasyInstaller
-EasyInstaller is a simple CMD script that allows you to easily download and install mannuel popular Windows applications with a few keystrokes. It provides a menu-driven interface where you can select multiple apps to download at once
+
+EasyInstaller is a simple CMD script that allows you to easily download and install many popular Windows applications with just a few keystrokes. It provides a menu-driven interface where you can select multiple apps to download at once.
+
 Features
 
 Download and install popular browsers, gaming clients, media players, security tools, and utilities.
@@ -16,7 +18,7 @@ Follow the on-screen instructions to select the applications you want to install
 
 The selected applications will be downloaded to your Downloads folder.
 
-Run the downloaded installers manually to complete installation.
+Run the downloaded installers manually to complete the installation.
 
 Supported Applications
 
@@ -38,7 +40,9 @@ Epic Games Launcher
 
 Ubisoft Connect
 
-Rockstar games Launcher 
+Rockstar Games Launcher
+
+Battle.net
 
 Media Players
 
@@ -50,27 +54,44 @@ iTunes
 
 Security & Cloud Services
 
-ProtonMail 
+ProtonMail (Website only)
 
-ProtonDrive (Website only) - "need help to fix issue!"
+ProtonDrive (Website only) - Need help to fix issue!
 
-ProtonPass 
+ProtonPass (Website only)
 
-ProtonVPN 
+ProtonVPN
+
+Outlook
 
 Utilities
 
 QFlipper
 
-Outlook
-
 RAMMap
 
+Notepad++
+
+HWMonitor
+
+Communication Apps
+
+Telegram
+
+Skype
+
+Zoom
+
 Discord
+
+Other
+
+Create God Mode folder
 
 Notes
 
 This project is open-source and free to use. Contributions are welcome!
 
-For more details, visit: https://github.com/murdervan
+ProtonApps cannot be downloaded, only their websites can be visited.
 
+For more details, visit: GitHub Repository
