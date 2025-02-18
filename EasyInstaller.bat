@@ -13,7 +13,7 @@ echo.
 
 :MENU
 echo ===========================
-echo      Apps Downloader
+echo   Windows Apps Downloader
 echo ===========================
 echo.
 
@@ -28,26 +28,35 @@ echo 5. Download EA App (formerly Origin)
 echo 6. Download Epic Games Launcher
 echo 7. Download Ubisoft Connect
 echo 8. Download Rockstar Games Launcher
+echo 9. Download Battle.net
 echo.
 echo Media Players:
-echo 9. Download VLC Media Player
-echo 10. Download Spotify
-echo 11. Download iTunes
+echo 10. Download VLC Media Player
+echo 11. Download Spotify
+echo 12. Download iTunes
 echo.
 echo Security & Cloud Services:
-echo 12. Download ProtonMail
-echo 13. Download ProtonDrive
-echo 14. Download ProtonPass
-echo 15. Download ProtonVPN
+echo 13. Download ProtonMail
+echo 14. Download ProtonDrive
+echo 15. Download ProtonPass
+echo 16. Download ProtonVPN
+echo 17. Download Outlook
 echo.
 echo Utilities:
-echo 16. Download QFlipper from FlipperZero.one
-echo 17. Download Outlook
-echo 18. Download RAMMap
-echo 19. Download Discord
-echo 20. Create God Mode folder
+echo 18. Download QFlipper from FlipperZero.one
+echo 19. Download RAMMap
+echo 20. Download Notepad++
+echo 21. Download HWMonitor
 echo.
-echo 21. Exit
+echo Communication Apps:
+echo 22. Download Telegram
+echo 23. Download Skype
+echo 24. Download Zoom
+echo 25. Download Discord
+echo.
+echo 26. Create God Mode folder
+echo.
+echo 27. Exit
 echo.
 
 set /p choice=Choose apps to download (e.g., 1 2 3 for Chrome, Firefox, and Edge): 
@@ -61,22 +70,64 @@ for %%a in (%choice%) do (
     if %%a==6 call :DownloadEpicGames
     if %%a==7 call :DownloadUbisoft
     if %%a==8 call :DownloadRockstar
-    if %%a==9 call :DownloadVLC
-    if %%a==10 call :DownloadSpotify
-    if %%a==11 call :DownloadiTunes
-    if %%a==12 call :DownloadProtonMail
-    if %%a==13 call :DownloadProtonDrive
-    if %%a==14 call :DownloadProtonPass
-    if %%a==15 call :DownloadProtonVPN
-    if %%a==16 call :DownloadQFlipper
+    if %%a==9 call :DownloadBattleNet
+    if %%a==10 call :DownloadVLC
+    if %%a==11 call :DownloadSpotify
+    if %%a==12 call :DownloadiTunes
+    if %%a==13 call :DownloadProtonMail
+    if %%a==14 call :DownloadProtonDrive
+    if %%a==15 call :DownloadProtonPass
+    if %%a==16 call :DownloadProtonVPN
     if %%a==17 call :DownloadOutlook
-    if %%a==18 call :DownloadRAMMap
-    if %%a==19 call :DownloadDiscord
-    if %%a==20 call :CreateGodMode
-    if %%a==21 exit
+    if %%a==18 call :DownloadQFlipper
+    if %%a==19 call :DownloadRAMMap
+    if %%a==20 call :DownloadNotepadPP
+    if %%a==21 call :DownloadHWMonitor
+    if %%a==22 call :DownloadTelegram
+    if %%a==23 call :DownloadSkype
+    if %%a==24 call :DownloadZoom
+    if %%a==25 call :DownloadDiscord
+    if %%a==26 call :CreateGodMode
+    if %%a==27 exit
 )
 
 goto MENU
+
+:DownloadBattleNet
+echo Downloading Battle.net...
+powershell -Command "Invoke-WebRequest -Uri 'https://www.battle.net/download/getInstaller?os=win&installer=Battle.net-Setup.exe' -OutFile '%USERPROFILE%\Downloads\battlenet_installer.exe'"
+echo Battle.net has been downloaded.
+goto :eof
+
+:DownloadNotepadPP
+echo Downloading Notepad++...
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/notepad-plus-plus/notepad-plus-plus/releases/latest/download/npp.8.5.3.Installer.x64.exe' -OutFile '%USERPROFILE%\Downloads\notepadpp_installer.exe'"
+echo Notepad++ has been downloaded.
+goto :eof
+
+:DownloadHWMonitor
+echo Downloading HWMonitor...
+powershell -Command "Invoke-WebRequest -Uri 'https://www.cpuid.com/downloads/hwmonitor/hwmonitor_1.50.exe' -OutFile '%USERPROFILE%\Downloads\hwmonitor_installer.exe'"
+echo HWMonitor has been downloaded.
+goto :eof
+
+:DownloadTelegram
+echo Downloading Telegram...
+powershell -Command "Invoke-WebRequest -Uri 'https://telegram.org/dl/desktop/win64' -OutFile '%USERPROFILE%\Downloads\telegram_installer.exe'"
+echo Telegram has been downloaded.
+goto :eof
+
+:DownloadSkype
+echo Downloading Skype...
+powershell -Command "Invoke-WebRequest -Uri 'https://go.skype.com/windows.desktop.download' -OutFile '%USERPROFILE%\Downloads\skype_installer.exe'"
+echo Skype has been downloaded.
+goto :eof
+
+:DownloadZoom
+echo Downloading Zoom...
+powershell -Command "Invoke-WebRequest -Uri 'https://zoom.us/client/latest/ZoomInstaller.exe' -OutFile '%USERPROFILE%\Downloads\zoom_installer.exe'"
+echo Zoom has been downloaded.
+goto :eof
 
 :DownloadRockstar
 echo Downloading Rockstar Games Launcher...
