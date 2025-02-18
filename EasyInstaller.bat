@@ -13,7 +13,7 @@ echo.
 
 :MENU
 echo ===========================
-echo   Windows Apps Downloader
+echo      Apps Downloader
 echo ===========================
 echo.
 
@@ -27,25 +27,27 @@ echo 4. Download Steam
 echo 5. Download EA App (formerly Origin)
 echo 6. Download Epic Games Launcher
 echo 7. Download Ubisoft Connect
+echo 8. Download Rockstar Games Launcher
 echo.
 echo Media Players:
-echo 8. Download VLC Media Player
-echo 9. Download Spotify
-echo 10. Download iTunes
+echo 9. Download VLC Media Player
+echo 10. Download Spotify
+echo 11. Download iTunes
 echo.
 echo Security & Cloud Services:
-echo 11. Download ProtonMail
-echo 12. Download ProtonDrive
-echo 13. Download ProtonPass
-echo 14. Download ProtonVPN
+echo 12. Download ProtonMail
+echo 13. Download ProtonDrive
+echo 14. Download ProtonPass
+echo 15. Download ProtonVPN
 echo.
 echo Utilities:
-echo 15. Download QFlipper from FlipperZero.one
-echo 16. Download Outlook
-echo 17. Download RAMMap
-echo 18. Download Discord
+echo 16. Download QFlipper from FlipperZero.one
+echo 17. Download Outlook
+echo 18. Download RAMMap
+echo 19. Download Discord
+echo 20. Create God Mode folder
 echo.
-echo 19. Exit
+echo 21. Exit
 echo.
 
 set /p choice=Choose apps to download (e.g., 1 2 3 for Chrome, Firefox, and Edge): 
@@ -58,21 +60,29 @@ for %%a in (%choice%) do (
     if %%a==5 call :DownloadEA
     if %%a==6 call :DownloadEpicGames
     if %%a==7 call :DownloadUbisoft
-    if %%a==8 call :DownloadVLC
-    if %%a==9 call :DownloadSpotify
-    if %%a==10 call :DownloadiTunes
-    if %%a==11 call :DownloadProtonMail
-    if %%a==12 call :DownloadProtonDrive
-    if %%a==13 call :DownloadProtonPass
-    if %%a==14 call :DownloadProtonVPN
-    if %%a==15 call :DownloadQFlipper
-    if %%a==16 call :DownloadOutlook
-    if %%a==17 call :DownloadRAMMap
-    if %%a==18 call :DownloadDiscord
-    if %%a==19 exit
+    if %%a==8 call :DownloadRockstar
+    if %%a==9 call :DownloadVLC
+    if %%a==10 call :DownloadSpotify
+    if %%a==11 call :DownloadiTunes
+    if %%a==12 call :DownloadProtonMail
+    if %%a==13 call :DownloadProtonDrive
+    if %%a==14 call :DownloadProtonPass
+    if %%a==15 call :DownloadProtonVPN
+    if %%a==16 call :DownloadQFlipper
+    if %%a==17 call :DownloadOutlook
+    if %%a==18 call :DownloadRAMMap
+    if %%a==19 call :DownloadDiscord
+    if %%a==20 call :CreateGodMode
+    if %%a==21 exit
 )
 
 goto MENU
+
+:DownloadRockstar
+echo Downloading Rockstar Games Launcher...
+powershell -Command "Invoke-WebRequest -Uri 'https://gamedownloads.rockstargames.com/public/installer/Rockstar-Games-Launcher.exe' -OutFile '%USERPROFILE%\Downloads\rockstar_installer.exe'"
+echo Rockstar Games Launcher has been downloaded.
+goto :eof
 
 :DownloadChrome
 echo Downloading Google Chrome...
@@ -180,4 +190,10 @@ goto :eof
 echo Downloading Discord...
 powershell -Command "Invoke-WebRequest -Uri 'https://discord.com/api/download?platform=win' -OutFile '%USERPROFILE%\Downloads\discord_installer.exe'"
 echo Discord has been downloaded.
+goto :eof
+
+:CreateGodMode
+echo Creating God Mode folder...
+mkdir "%USERPROFILE%\Desktop\GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}"
+echo God Mode folder has been created on your Desktop.
 goto :eof
