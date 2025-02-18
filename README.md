@@ -38,6 +38,8 @@ Epic Games Launcher
 
 Ubisoft Connect
 
+Rockstar games Launcher 
+
 Media Players
 
 VLC Media Player
