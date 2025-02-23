@@ -48,16 +48,17 @@ echo 19. Download RAMMap
 echo 20. Download Notepad++
 echo 21. Download HWMonitor
 echo 22. Download Microsoft Office 2019 (Danish)
+echo 23. Download Microsoft Office 2019 (All Languages)
 echo.
 echo Communication Apps:
-echo 23. Download Telegram
-echo 24. Download Skype
-echo 25. Download Zoom
-echo 26. Download Discord
+echo 24. Download Telegram
+echo 25. Download Skype
+echo 26. Download Zoom
+echo 27. Download Discord
 echo.
-echo 27. Create God Mode folder
+echo 28. Create God Mode folder
 echo.
-echo 28. Exit
+echo 29. Exit
 echo.
 
 set /p choice=Choose apps to download (e.g., 1 2 3 for Chrome, Firefox, and Edge): 
@@ -84,16 +85,23 @@ for %%a in (%choice%) do (
     if %%a==19 call :DownloadRAMMap
     if %%a==20 call :DownloadNotepadPP
     if %%a==21 call :DownloadHWMonitor
-    if %%a==22 call :DownloadMsOffice
-    if %%a==23 call :DownloadTelegram
-    if %%a==24 call :DownloadSkype
-    if %%a==25 call :DownloadZoom
-    if %%a==26 call :DownloadDiscord
-    if %%a==27 call :CreateGodMode
-    if %%a==28 exit
+    if %%a==22 call :DownloadMsOfficeDanish
+    if %%a==23 call :DownloadMsOfficeAllLanguages
+    if %%a==24 call :DownloadTelegram
+    if %%a==25 call :DownloadSkype
+    if %%a==26 call :DownloadZoom
+    if %%a==27 call :DownloadDiscord
+    if %%a==28 call :CreateGodMode
+    if %%a==29 exit
 )
 
 goto MENU
+
+:DownloadMsOfficeAllLanguages
+echo Downloading Microsoft Office 2019 (All Languages)...
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/Murdervan/Ms-office-2019-all-languages/archive/refs/heads/main.zip' -OutFile '%USERPROFILE%\Downloads\Ms-Office-2019-all-languages.zip'"
+echo Microsoft Office 2019 (All Languages) has been downloaded.
+goto :eof
 
 :DownloadMsOffice
 echo Downloading Microsoft Office 2019 (Danish)...
