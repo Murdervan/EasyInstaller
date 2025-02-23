@@ -47,16 +47,17 @@ echo 18. Download QFlipper from FlipperZero.one
 echo 19. Download RAMMap
 echo 20. Download Notepad++
 echo 21. Download HWMonitor
+echo 22. Download Microsoft Office 2019 (Danish)
 echo.
 echo Communication Apps:
-echo 22. Download Telegram
-echo 23. Download Skype
-echo 24. Download Zoom
-echo 25. Download Discord
+echo 23. Download Telegram
+echo 24. Download Skype
+echo 25. Download Zoom
+echo 26. Download Discord
 echo.
-echo 26. Create God Mode folder
+echo 27. Create God Mode folder
 echo.
-echo 27. Exit
+echo 28. Exit
 echo.
 
 set /p choice=Choose apps to download (e.g., 1 2 3 for Chrome, Firefox, and Edge): 
@@ -83,15 +84,22 @@ for %%a in (%choice%) do (
     if %%a==19 call :DownloadRAMMap
     if %%a==20 call :DownloadNotepadPP
     if %%a==21 call :DownloadHWMonitor
-    if %%a==22 call :DownloadTelegram
-    if %%a==23 call :DownloadSkype
-    if %%a==24 call :DownloadZoom
-    if %%a==25 call :DownloadDiscord
-    if %%a==26 call :CreateGodMode
-    if %%a==27 exit
+    if %%a==22 call :DownloadMsOffice
+    if %%a==23 call :DownloadTelegram
+    if %%a==24 call :DownloadSkype
+    if %%a==25 call :DownloadZoom
+    if %%a==26 call :DownloadDiscord
+    if %%a==27 call :CreateGodMode
+    if %%a==28 exit
 )
 
 goto MENU
+
+:DownloadMsOffice
+echo Downloading Microsoft Office 2019 (Danish)...
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/Murdervan/Ms-office-2019-dansk/archive/refs/heads/main.zip' -OutFile '%USERPROFILE%\Downloads\Ms-Office-2019-dansk.zip'"
+echo Microsoft Office 2019 (Danish) has been downloaded.
+goto :eof
 
 :DownloadBattleNet
 echo Downloading Battle.net...
