@@ -1,9 +1,3 @@
-### CMD COMMAND TO QUICK DOWNLOAD AND OPEN
-
-```Powershell
-curl -l -o "%USERPROFILE%\Downloads\Easyinstaller.zip" https://github.com/Murdervan/EasyInstaller/archive/refs/heads/main.zip
-```
-
 # EasyInstaller
 
 EasyInstaller is a simple CMD script that allows you to easily download and install many popular Windows applications with just a few keystrokes. It provides a menu-driven interface where you can select multiple apps to download at once.
