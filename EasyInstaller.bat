@@ -35,7 +35,7 @@ echo 10. Download VLC Media Player
 echo 11. Download Spotify
 echo 12. Download iTunes
 echo.
-echo Security & Cloud Services:
+echo Security and Cloud Services:
 echo 13. Download ProtonMail
 echo 14. Download ProtonDrive
 echo 15. Download ProtonPass
