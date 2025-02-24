@@ -92,6 +92,10 @@ Discord
 
 Other
 
+Office danish
+
+Office All languages
+
 Create God Mode folder
 
 Notes
