@@ -103,7 +103,7 @@ powershell -Command "Invoke-WebRequest -Uri 'https://github.com/Murdervan/Ms-off
 echo Microsoft Office 2019 (All Languages) has been downloaded.
 goto :eof
 
-:DownloadMsOffice
+:DownloadMsOfficeDanish
 echo Downloading Microsoft Office 2019 (Danish)...
 powershell -Command "Invoke-WebRequest -Uri 'https://github.com/Murdervan/Ms-office-2019-dansk/archive/refs/heads/main.zip' -OutFile '%USERPROFILE%\Downloads\Ms-Office-2019-dansk.zip'"
 echo Microsoft Office 2019 (Danish) has been downloaded.
