@@ -1,4 +1,4 @@
-###CMD COMMAND TO QUICK DOWNLOAD AND OPEN
+### CMD COMMAND TO QUICK DOWNLOAD AND OPEN
 
 ```Powershell
 curl -l -o "%USERPROFILE%\Downloads\Easyinstaller.zip" https://github.com/Murdervan/EasyInstaller/archive/refs/heads/main.zip
