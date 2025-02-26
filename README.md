@@ -96,6 +96,6 @@ Notes
 
 This project is open-source and free to use. Contributions are welcome!
 
-ProtonApps cannot be downloaded, only their websites can be visited.
+Some ProtonApps cannot be downloaded
 
 For more details, visit: GitHub Repository
