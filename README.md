@@ -22,7 +22,7 @@ Run the downloaded installers manually to complete the installation.
 
 Supported Applications
 
-Browsers
+### Browsers
 
 Google Chrome
 
@@ -30,7 +30,7 @@ Mozilla Firefox
 
 Microsoft Edge
 
-Gaming Clients
+### Gaming Clients
 
 Steam
 
@@ -44,7 +44,7 @@ Rockstar Games Launcher
 
 Battle.net
 
-Media Players
+### Media Players
 
 VLC Media Player
 
@@ -52,7 +52,7 @@ Spotify
 
 iTunes
 
-Security & Cloud Services
+### Security and Cloud Services
 
 ProtonMail (Website only)
 
@@ -64,7 +64,7 @@ ProtonVPN
 
 Outlook
 
-Utilities
+### Utilities
 
 QFlipper
 
@@ -74,7 +74,7 @@ Notepad++
 
 HWMonitor
 
-Communication Apps
+### Communication Apps
 
 Telegram
 
@@ -84,7 +84,7 @@ Zoom
 
 Discord
 
-Other
+### Other
 
 Office danish
 
@@ -92,10 +92,10 @@ Office All languages
 
 Create God Mode folder
 
-Notes
+
+
+## Notes
 
 This project is open-source and free to use. Contributions are welcome!
 
 Some ProtonApps cannot be downloaded
-
-For more details, visit: GitHub Repository
