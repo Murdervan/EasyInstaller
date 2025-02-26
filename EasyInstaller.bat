@@ -13,7 +13,7 @@ echo.
 
 :MENU
 echo ===========================
-echo   Windows Apps Downloader
+echo      Apps Downloader
 echo ===========================
 echo.
 
