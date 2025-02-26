@@ -1,3 +1,10 @@
+<div align="right">
+  
+  ### Check out my other 
+  
+  [![Repositories](https://img.shields.io/badge/Repositories-Murdervan-blue?style=for-the-badge&logo=github)](https://github.com/Murdervan?tab=repositories)
+</div>
+
 # EasyInstaller
 
 EasyInstaller is a simple CMD script that allows you to easily download and install many popular Windows applications with just a few keystrokes. It provides a menu-driven interface where you can select multiple apps to download at once.
